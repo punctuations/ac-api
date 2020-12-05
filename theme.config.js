@@ -20,19 +20,25 @@ export default {
   ),
   head: (
     <React.Fragment>
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="theme-color" content="#ffffff" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="ac: animal crossing music at anytime" />
-      <meta
-        name="og:description"
-        content="ac: animal crossing music at anytime"
-      />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@shuding_" />
-      <meta name="og:title" content="ac: animal crossing music at anytime" />
       <meta name="apple-mobile-web-app-title" content="ac" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      />
+      <meta name="description" content="Animal Crossing music at anytime!" />
+      <meta property="og:title" content="ac - API" />
+      <meta property="og:image" content="/favicon.ico" />
+      <meta
+        property="og:description"
+        content="Animal Crossing music at anytime!"
+      />
+      <meta name="twitter:image" content="/favion.ico" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Animal Crossing Time" />
+      <meta name="twitter:creator" content="@wwwdotca" />
+      <meta name="twitter:site" content="@wwwdotca" />
+      <meta name="theme-color" content="#16b816" />
     </React.Fragment>
   ),
 };
