@@ -78,7 +78,7 @@ export default function Home(props) {
 
 ```
 
-## Client Side Data Fetching
+## Client Side Data Fetching w/o SWR
 
 Client Side Data Fetching w/o SWR you can import `useState` and `useEffect` which are both native react components which you can use to Data Fetch on the Client Side.
 You can use the following as a template and example.
