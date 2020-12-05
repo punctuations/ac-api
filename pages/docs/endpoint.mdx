@@ -6,13 +6,13 @@ import Callout from "nextra-theme-docs/callout";
 
 It has never been easier to get Animal Crossing music!
 
-There are no `headers` required for this API, simply fetch `https://ac-api.vercel.app/v1/` and you're good to go!
+There are no `headers` required for this API, simply fetch `https://ac-api.vercel.app/api/` and you're good to go!
 
 Example:
 
 ```js highlight=2
 const getSong = () => {
-  fetch("https://ac-api.vercel.app/v1/")
+  fetch("https://ac-api.vercel.app/api/")
     .then((res) => res.json())
     .then(parseResponse)
     .then(setResponse);
@@ -25,7 +25,7 @@ React example:
 
 ```jsx highlight=2
 useEffect(() => {
-  fetch("https://ac-api.vercel.app/v1/").then((res) => res.json());
+  fetch("https://ac-api.vercel.app/api/").then((res) => res.json());
 }, []);
 ```
 
@@ -47,7 +47,7 @@ Then you can import `useSWR` and start using it inside any function components:
 import useSWR from "swr";
 
 function Music() {
-  const { data, error } = useSWR("https://ac-api.vercel.app/v1/", fetch);
+  const { data, error } = useSWR("https://ac-api.vercel.app/api/", fetch);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;

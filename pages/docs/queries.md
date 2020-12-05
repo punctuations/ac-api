@@ -2,13 +2,13 @@
 
 This API uses queries defined by a `?` at the end of the URL, the query is then followed by a `value` and its `key`.
 
-A full example of a proper query to the API would be `https://ac-api.vercel.app/v1/?time=1PM`.
+A full example of a proper query to the API would be `https://ac-api.vercel.app/api/?time=1PM`.
 
 ## Time
 
 By appending `?time=6AM` to the end of the URL you can request a specific time.
 
-A request to `https://ac-api.vercel.app/v1/?time=8PM` will return the follwing:
+A request to `https://ac-api.vercel.app/api/?time=8PM` will return the follwing:
 
 ```json
 {

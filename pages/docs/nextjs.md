@@ -13,7 +13,7 @@ import useSWR from "swr";
 export async function getStaticProps() {
   const fetcher = (url) => fetch(url).then(res => res.json());
 
-  const res = await fetcher('https://ac-api.vercel.app/v1/');
+  const res = await fetcher('https://ac-api.vercel.app/api/');
   return {
     props: {
       res,
@@ -24,7 +24,7 @@ export async function getStaticProps() {
 export default function Home(props) {
 	const fetcher = (url) => fetch(url).then(res => res.json());
 
-	const { data } = useSWR('https://ac-api.vercel.app/v1/', fetcher, {
+	const { data } = useSWR('https://ac-api.vercel.app/api/', fetcher, {
 		initialData: props.res,
   });
 
@@ -47,7 +47,7 @@ This approach works well for user dashboard pages, for example. Because a dashbo
 import useSWR from "swr";
 
 function Music() {
-  const { data, error } = useSWR("https://ac-api.vercel.app/v1/", fetch);
+  const { data, error } = useSWR("https://ac-api.vercel.app/api/", fetch);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
@@ -65,7 +65,7 @@ To pre-render the page w/o SWR you can use the following as a template and examp
 
 export async function getStaticProps() {
 
-	const res = await fetch("https://ac-api.vercel.app/v1/").then((res) => res.json());
+	const res = await fetch("https://ac-api.vercel.app/api/").then((res) => res.json());
 	return { props: { res } };
 }
 
@@ -91,7 +91,7 @@ export default function Home() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    setData(await fetch("https://ac-api.vercel.app/v1/").then((res) => res.json()))
+    setData(await fetch("https://ac-api.vercel.app/api/").then((res) => res.json()))
   }, [])
 
   return (
