@@ -42,48 +42,48 @@ export default function handler(req, res) {
       },
       {
         "game": "New Leaf",
-        "file": "https://ac.vercel.app/music/New Leaf/08 PM.mp3",
-        "firefoxFile": "https://ac.vercel.app/music/New Leaf/8 PM.mp3",
+        "file": `https://ac.vercel.app/music/New Leaf/${getTime()}.mp3`,
+        "firefoxFile": `https://ac.vercel.app/music/New Leaf/${getFirefoxTime()}.mp3`,
         "weather": [
           {
-            "snow": "https://ac.vercel.app/music/New Leaf/snow/08 PM.mp3",
-            "firefoxSnow": "https://ac.vercel.app/music/New Leaf/snow/8 PM.mp3"
+            "snow": `https://ac.vercel.app/music/New Leaf/snow/${getTime()}.mp3`,
+            "firefoxSnow": `https://ac.vercel.app/music/New Leaf/snow/${getFirefoxTime()}.mp3`
           },
           {
-            "rain": "https://ac.vercel.app/music/New Leaf/rain/08 PM.mp3",
-            "firefoxRain": "https://ac.vercel.app/music/New Leaf/rain/8 PM.mp3"
+            "rain": `https://ac.vercel.app/music/New Leaf/rain/${getTime()}.mp3`,
+            "firefoxRain": `https://ac.vercel.app/music/New Leaf/rain/${getFirefoxTime()}.mp3`
           }
         ],
         "art": "https://ac.vercel.app/albums/newleaf.jpeg"
       },
       {
         "game": "City Folk",
-        "file": "https://ac.vercel.app/music/City Folk/08 PM.mp3",
-        "firefoxFile": "https://ac.vercel.app/music/City Folk/8 PM.mp3",
+        "file": `https://ac.vercel.app/music/City Folk/${getTime()}.mp3`,
+        "firefoxFile": `https://ac.vercel.app/music/City Folk/${getFirefoxTime()}.mp3`,
         "weather": [
           {
-            "snow": "https://ac.vercel.app/music/City Folk/snow/08 PM.mp3",
-            "firefoxSnow": "https://ac.vercel.app/music/City Folk/snow/8 PM.mp3"
+            "snow": `https://ac.vercel.app/music/City Folk/snow/${getTime()}.mp3`,
+            "firefoxSnow": `https://ac.vercel.app/music/City Folk/snow/${getFirefoxTime()}.mp3`
           },
           {
-            "rain": "https://ac.vercel.app/music/City Folk/rain/08 PM.mp3",
-            "firefoxRain": "https://ac.vercel.app/music/City Folk/rain/8 PM.mp3"
+            "rain": `https://ac.vercel.app/music/City Folk/rain/${getTime()}.mp3`,
+            "firefoxRain": `https://ac.vercel.app/music/City Folk/rain/${getFirefoxTime()}.mp3`
           }
         ],
         "art": "https://ac.vercel.app/albums/cityfolk.jpeg"
       },
       {
         "game": "Gamecube",
-        "file": "https://ac.vercel.app/music/Gamecube/08 PM.mp3",
-        "firefoxFile": "https://ac.vercel.app/music/Gamecube/8 PM.mp3",
+        "file": `https://ac.vercel.app/music/Gamecube/${getTime()}.mp3`,
+        "firefoxFile": `https://ac.vercel.app/music/Gamecube/${getFirefoxTime()}.mp3`,
         "weather": [
           {
-            "snow": "https://ac.vercel.app/music/Gamecube/snow/08 PM.mp3",
-            "firefoxSnow": "https://ac.vercel.app/music/Gamecube/snow/8 PM.mp3"
+            "snow": `https://ac.vercel.app/music/Gamecube/snow/${getTime()}.mp3`,
+            "firefoxSnow": `https://ac.vercel.app/music/Gamecube/snow/${getFirefoxTime()}.mp3`
           },
           {
-            "rain": "https://ac.vercel.app/music/Gamecube/rain/08 PM.mp3",
-            "firefoxRain": "https://ac.vercel.app/music/Gamecub/rain/8 PM.mp3"
+            "rain": `https://ac.vercel.app/music/Gamecube/rain/${getTime()}.mp3`,
+            "firefoxRain": `https://ac.vercel.app/music/Gamecub/rain/${getFirefoxTime()}.mp3`
           }
         ],
         "art": "https://ac.vercel.app/albums/GCN.jpeg"
