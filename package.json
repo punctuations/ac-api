@@ -1,0 +1,32 @@
+{
+  "name": "ac-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next",
+    "build": "next build"
+  },
+  "author": "Matt <matt@dont-ping.me>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "cssnano": "^4.1.10",
+    "next": "^10.0.0",
+    "nextra": "^0.3.1",
+    "nextra-theme-docs": "^0.3.1",
+    "postcss": "^8.1.14",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false
+  }
+}
