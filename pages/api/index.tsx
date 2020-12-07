@@ -1,20 +1,20 @@
 function getFirefoxTime() {
-  switch(new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() >= 13) {
+  switch(new Date().getHours() >= 13) {
     case true:
-      return `${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12} PM`
+      return `${new Date().getHours() % 12} PM`
     case false:
-      return `${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours()} AM`
+      return `${new Date().getHours()} AM`
   }
 }
 
 function getTime() {
-  switch(new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() >= 13) {
+  switch(new Date().getHours() >= 13) {
     case true:
-      if (new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12 == 10 || new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12 == 11 || new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12 == 12) return `${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12} PM`
-      return `0${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() % 12} PM`
+      if (new Date().getHours() % 12 == 10 || new Date().getHours() % 12 == 11 || new Date().getHours() % 12 == 12) return `${new Date().getHours() % 12} PM`
+      return `0${new Date().getHours() % 12} PM`
     case false:
-      if (new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() == 10 || new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() == 11 || new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours() == 12) return `${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours()} AM`
-      return `0${new Date(`Decemeber 5, 2020 ${new Date().toLocaleTimeString(['en-US'])}`).getHours()} AM`
+      if (new Date().getHours() == 10 || new Date().getHours() == 11 || new Date().getHours() == 12) return `${new Date().getHours()} AM`
+      return `0${new Date().getHours()} AM`
   }
 }
 
