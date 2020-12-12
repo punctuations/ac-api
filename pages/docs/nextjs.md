@@ -11,7 +11,7 @@ The following is an example of using SWR and Static Site Generation:
 import useSWR from "swr";
 
 export async function getStaticProps() {
-  const fetcher = (url) => fetch(url).then(res => res.json());
+  const fetcher = (url) => fetch(url).then(r => r.json());
 
   const res = await fetcher('https://ac-api.vercel.app/api/');
   return {
@@ -22,7 +22,7 @@ export async function getStaticProps() {
 }
 
 export default function Home(props) {
-	const fetcher = (url) => fetch(url).then(res => res.json());
+	const fetcher = (url) => fetch(url).then(r => r.json());
 
 	const { data } = useSWR('https://ac-api.vercel.app/api/', fetcher, {
 		initialData: props.res,
@@ -65,7 +65,7 @@ To pre-render the page w/o SWR you can use the following as a template and examp
 
 export async function getStaticProps() {
 
-	const res = await fetch("https://ac-api.vercel.app/api/").then((res) => res.json());
+	const res = await fetch("https://ac-api.vercel.app/api/").then((r) => r.json());
 	return { props: { res } };
 }
 
@@ -91,7 +91,7 @@ export default function Home() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    setData(await fetch("https://ac-api.vercel.app/api/").then((res) => res.json()))
+    setData(fetch("https://ac-api.vercel.app/api/").then((r) => r.json()))
   }, [])
 
   return (

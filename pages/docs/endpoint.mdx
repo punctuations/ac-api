@@ -13,7 +13,7 @@ Example:
 ```js highlight=2
 const getSong = () => {
   fetch("https://ac-api.vercel.app/api/")
-    .then((res) => res.json())
+    .then((r) => r.json())
     .then(parseResponse)
     .then(setResponse);
 };
@@ -25,7 +25,7 @@ React example:
 
 ```jsx highlight=2
 useEffect(() => {
-  fetch("https://ac-api.vercel.app/api/").then((res) => res.json());
+  fetch("https://ac-api.vercel.app/api/").then((r) => r.json());
 }, []);
 ```
 
@@ -38,7 +38,7 @@ useEffect(() => {
 For this API you can use a `fetcher` function, which is just a wrapper of the native `fetch`:
 
 ```js
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args) => fetch(...args).then((r) => r.json());
 ```
 
 Then you can import `useSWR` and start using it inside any function components:
