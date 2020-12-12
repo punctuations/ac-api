@@ -1,18 +1,21 @@
-# [Nextra](https://nextra.vercel.app)
-
-Warning: this project is not production ready, use it on your own risk.
-
-[![](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&c=1)
-
-**Nextra** is a [Next.js](https://nextjs.org) and Markdown ([MDX](https://mdxjs.com)) based site generator. 0 line of code needed.
+# ac API
 
 ![](/public/demo.png)
 
-## Development
+## Introduction
 
-The code of the plugin is on the [`core`](https://github.com/shuding/nextra/tree/core) branch.
+[ac](https://ac.vercel.app/) is a website that plays Animal Crossing Music depending on the time and weather, this repository is an API for that.
 
-## Themes
+This API is the official API for the site, all of the data returned is taken all from the source.
 
-- [nextra-theme-docs](https://github.com/vercel/swr-site) ([demo](https://swr.vercel.app))
-- [nextra-theme-blog](https://github.com/shuding/site) ([demo](https://shud.in))
+## Getting started
+
+You can access the API endpoint by going to [ac-api.vercel.app](https://ac-api.vercel.app/) which will return a big ol' JSON response, then you can parse that.
+
+If you're looking for a specific time and/or weather you can read more about queries in the [docs](https://ac-api.vercel.app/docs/queries/).
+
+## What is this site made with?
+
+This site (the API docs) is made with [Nextra](https://nextra.vercel.app/) which is a very cool & very convenient Next.js Static Site Generator.
+
+You can see more about [Nextra](https://nextra.vercel.app) on their [GitHub Repo](https://github.com/shuding/nextra/).
