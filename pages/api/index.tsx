@@ -75,13 +75,19 @@ function query(req: NextApiRequest, browser?: string) {
         new Date().getHours() == 10 ||
         new Date().getHours() == 11 ||
         new Date().getHours() == 12
-      )
+      ) {
         return `${new Date().getHours()} AM`;
-      return `0${new Date().getHours()} AM`;
+      } else if (new Date().getHours() == 0) {
+        return "12 AM";
+      } else {
+        return `0${new Date().getHours()} AM`;
+      }
     }
   } else if (browser == "firefox") {
     if (new Date().getHours() >= 13) {
       return `${new Date().getHours() % 12} PM`;
+    } else if (new Date().getHours() == 0) {
+      return "12 AM";
     } else {
       return `${new Date().getHours()} AM`;
     }
