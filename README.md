@@ -24,3 +24,19 @@ You can see more about [Nextra](https://nextra.vercel.app) on their [GitHub Repo
 
 You can get started by [forking this project](https://github.com/punctuations/ac-api/fork), then make adjustments as needed, create a pull request,
 from there it will be reveiwed and either be merged or not.
+
+### Development
+
+If you're contributing, or just cloned it, to start up the development server first:
+
+intall depedencies
+
+```bash
+yarn
+```
+
+and start!
+
+```bash
+yarn dev
+```
