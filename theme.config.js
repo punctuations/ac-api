@@ -8,7 +8,7 @@ export default {
   customSearch: null, // <- customizable, you can use algolia for example
   darkMode: true,
   footer: true,
-  footerText: "MIT 2020 © Matt.",
+  footerText: `MIT ${new Date().getFullYear()} © Matt.`,
   footerEditOnGitHubLink: true, // will link to the docs repo
   logo: (
     <React.Fragment>
