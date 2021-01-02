@@ -1,4 +1,4 @@
-# ac API
+# api - ac
 
 ![](/public/demo.png)
 
@@ -19,3 +19,8 @@ If you're looking for a specific time and/or weather you can read more about que
 This site (the API docs) is made with [Nextra](https://nextra.vercel.app/) which is a very cool & very convenient Next.js Static Site Generator.
 
 You can see more about [Nextra](https://nextra.vercel.app) on their [GitHub Repo](https://github.com/shuding/nextra/).
+
+## Contributing
+
+You can get started by [forking this project](https://github.com/punctuations/ac-api/fork), then make adjustments as needed, create a pull request,
+from there it will be reveiwed and either be merged or not.
