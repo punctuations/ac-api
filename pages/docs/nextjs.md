@@ -91,7 +91,7 @@ export default function Home() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    setData(fetch("https://ac-api.vercel.app/api/").then((r) => r.json()))
+    fetch("https://ac-api.vercel.app/api/").then(r => r.json()).then(setData);
   }, [])
 
   return (
