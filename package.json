@@ -16,7 +16,7 @@
     "next": "^10.0.0",
     "nextra": "^0.3.1",
     "nextra-theme-docs": "^0.3.1",
-    "postcss": "^8.1.14",
+    "postcss": "^8.2.10",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
